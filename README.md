@@ -18,7 +18,6 @@ Landing page institucional estática da **FGR Fisioterapia LTDA**, empresa de fi
 A FGR Fisioterapia LTDA foi fundada em 2020 e está sediada em Poá (SP). A operação reúne gestão rigorosa de escalas e prática clínica baseada em evidências, com atuação em UTI Adulto, UTI Infantil, Enfermaria e Homecare.
 
 - **CNPJ:** 37.542.738/0001-90
-- **CNAE:** 86.50-0/04
 - **Sede:** Av. Felício Marinelli, 604 – Jardim Medina, Poá – SP, CEP 08556-200
 - **Contato:** fgrfisioterapialtda@gmail.com
 
@@ -93,41 +92,6 @@ fgr-fisioterapia/
 ├── vercel.json
 └── .gitignore
 ```
-
-## Rodar localmente
-
-Não há dependências para instalar. Basta servir a pasta como site estático:
-
-```bash
-python3 -m http.server 8000
-```
-
-Depois acesse `http://localhost:8000`.
-
-Também é possível abrir o `index.html` diretamente no navegador. Nesse caso, o botão de cópia usa automaticamente o fallback para `document.execCommand`.
-
-## Deploy na Vercel
-
-### Pelo dashboard
-
-1. Acesse [vercel.com](https://vercel.com) e faça login.
-2. Clique em **Add New → Project**.
-3. Importe o repositório `Livia-Oliveira231964/fgr-fisioterapia-landing`.
-4. Mantenha o **Framework Preset** como **Other**, com **Root Directory** em `./`.
-5. Não informe Build Command nem Output Directory.
-6. Clique em **Deploy**.
-
-A branch `main` fica vinculada à produção e cada novo push gera um deploy automático.
-
-### Pela CLI
-
-```bash
-npx vercel@48 login
-npx vercel@48 link
-npx vercel@48 --prod
-```
-
-O arquivo `vercel.json` define `cleanUrls` e cabeçalhos de segurança (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` e `Permissions-Policy`).
 
 ## Contato
 
